@@ -6,10 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CSS Grid Layout</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css?family=Manjari&display=swap" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="main.css">
+    <style>
+        i {
+            font-size: 40px;
+            color: rgb(167, 51, 122);
+        }
+
+        .fa-solid.fa-hill-avalanche.fa-10x {
+            color: greenyellow;
+            transform: skewX(45deg) rotate(95deg);
+            animation: vibrar 1s ease;
+            animation-iteration-count: 3;
+            transition: all 1s ease;
+        }
+
+        @keyframes vibrar {
+            0% {
+                transform: translateX(5px);
+            }
+
+            25% {
+                transform: translateX(-5px);
+            }
+
+            50% {
+                transform: translateX(5px);
+            }
+
+            75% {
+                transform: translateX(-5px);
+            }
+
+            100% {
+                transform: translateX(0)
+            }
+
+        }
+    </style>
 </head>
 
 <body>
@@ -28,8 +68,34 @@
     </header>
     <div class="new-item">
         <figure>
-            <img src="screenshot.png" alt="">
-            <figcaption> testimu</figcaption>
+            <img src="screenshot.png" alt="" width="300">
+            <figcaption>
+                <i class="fa-solid fa-hill-avalanche fa-10x"></i>
+                <i class="fa-brands fa-dhl"></i>
+                <i class="fa fa-sitemap" aria-hidden="true"></i><i class="fa-solid fa-shuttle-space"></i>
+                <i class="fa-solid fa-shuttle-space"></i>
+                <i class="fa-solid fa-phone-volume"></i>
+                <i class="fa-solid fa-shuttle-space"></i>
+                <br>
+                <i class="fa-solid fa-face-grin-hearts fa-10x"></i>
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <i class="fa-regular fa-calendar-days"></i>
+                <i class="fa-regular fa-file-lines"></i>
+                <i class="fa-solid fa-microchip"></i>
+                <i class="fa-solid fa-f"></i>
+                <br>
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-dice-d20"></i>
+                <i class="fa-solid fa-dice-d20"></i>
+                <i class="fa-solid fa-dice"></i>
+                <i class="fa-solid fa-mosquito"></i>
+                <i class="fa-regular fa-building"></i>
+                <i class="fa-solid fa-bars-progress"></i>
+                <i class="fa-brands fa-square-js"></i>
+                <hr>
+
+
+            </figcaption>
         </figure>
 
     </div>
